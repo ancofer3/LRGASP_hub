@@ -3,13 +3,13 @@ bigDataUrl hg38_sqanti3.bb
 shortLabel SQANTI3 Transcripts
 longLabel SQANTI3 Transcriptome Analysis Results
 type bigBed 12 + 44
-filter.length 0:100000
+filter.length 0:150000
 filterByRange.length on
-filterLimits.length 0:100000
+filterLimits.length 0:150000
 filterLabel.length Transcript length (bp)
-filter.exons 0:200
+filter.exons 0:400
 filterByRange.exons on
-filterLimits.exons 0:200
+filterLimits.exons 0:400
 filterLabel.exons Number of exons
 filterValues.structural_category antisense,full-splice_match,fusion,genic,genic_intron,incomplete-splice_match,intergenic,novel_in_catalog,novel_not_in_catalog
 filterLabel.structural_category Structural category (FSM, ISM, NIC, NNC, etc.)
@@ -19,13 +19,13 @@ filterLabel.associated_gene Associated gene
 filterText.associated_transcript *
 filterType.associated_transcript wildcard
 filterLabel.associated_transcript Associated transcript
-filter.ref_length 0:100000
+filter.ref_length 0:150000
 filterByRange.ref_length on
-filterLimits.ref_length 0:100000
+filterLimits.ref_length 0:150000
 filterLabel.ref_length Reference transcript length
-filter.ref_exons 0:200
+filter.ref_exons 0:400
 filterByRange.ref_exons on
-filterLimits.ref_exons 0:200
+filterLimits.ref_exons 0:400
 filterLabel.ref_exons Reference exon count
 filter.diff_to_TSS -100000:100000
 filterByRange.diff_to_TSS on
@@ -136,11 +136,11 @@ filter.ratio_TSS 0:10
 filterByRange.ratio_TSS on
 filterLimits.ratio_TSS 0:10
 filterLabel.ratio_TSS TSS ratio
-filter.blockCount 0:200
+filter.blockCount 0:400
 filterByRange.blockCount on
-filterLimits.blockCount 0:200
+filterLimits.blockCount 0:400
 filterLabel.blockCount Number of exons (from BED)
-visibility full
+visibility pack
 group transcripts
 itemRgb on
 priority 1
@@ -153,18 +153,18 @@ bigDataUrl hg38_sqanti3_novel_in_catalog.bb
 shortLabel SQANTI3 novel_in_catalog
 longLabel SQANTI3 novel_in_catalog transcripts
 type bigBed 12 + 44
-visibility full
+visibility hide
 group transcripts
 itemRgb on
 priority 3
 html hg38_sqanti3_novel_in_catalog.html
-filter.length 0:100000
+filter.length 0:150000
 filterByRange.length on
-filterLimits.length 0:100000
+filterLimits.length 0:150000
 filterLabel.length Transcript length (bp)
-filter.exons 0:200
+filter.exons 0:400
 filterByRange.exons on
-filterLimits.exons 0:200
+filterLimits.exons 0:400
 filterLabel.exons Number of exons
 filterValues.structural_category novel_in_catalog
 filterLabel.structural_category Structural category (FSM, ISM, NIC, NNC, etc.)
@@ -174,13 +174,13 @@ filterLabel.associated_gene Associated gene
 filterText.associated_transcript *
 filterType.associated_transcript wildcard
 filterLabel.associated_transcript Associated transcript
-filter.ref_length 0:100000
+filter.ref_length 0:150000
 filterByRange.ref_length on
-filterLimits.ref_length 0:100000
+filterLimits.ref_length 0:150000
 filterLabel.ref_length Reference transcript length
-filter.ref_exons 0:200
+filter.ref_exons 0:400
 filterByRange.ref_exons on
-filterLimits.ref_exons 0:200
+filterLimits.ref_exons 0:400
 filterLabel.ref_exons Reference exon count
 filter.diff_to_TSS -100000:100000
 filterByRange.diff_to_TSS on
@@ -291,9 +291,9 @@ filter.ratio_TSS 0:10
 filterByRange.ratio_TSS on
 filterLimits.ratio_TSS 0:10
 filterLabel.ratio_TSS TSS ratio
-filter.blockCount 0:200
+filter.blockCount 0:400
 filterByRange.blockCount on
-filterLimits.blockCount 0:200
+filterLimits.blockCount 0:400
 filterLabel.blockCount Number of exons (from BED)
 
 track hg38_sqanti3_incomplete-splice_match
@@ -301,18 +301,18 @@ bigDataUrl hg38_sqanti3_incomplete-splice_match.bb
 shortLabel SQANTI3 incomplete-splice_match
 longLabel SQANTI3 incomplete-splice_match transcripts
 type bigBed 12 + 44
-visibility full
+visibility hide
 group transcripts
 itemRgb on
 priority 3
 html hg38_sqanti3_incomplete-splice_match.html
-filter.length 0:100000
+filter.length 0:150000
 filterByRange.length on
-filterLimits.length 0:100000
+filterLimits.length 0:150000
 filterLabel.length Transcript length (bp)
-filter.exons 0:200
+filter.exons 0:400
 filterByRange.exons on
-filterLimits.exons 0:200
+filterLimits.exons 0:400
 filterLabel.exons Number of exons
 filterValues.structural_category incomplete-splice_match
 filterLabel.structural_category Structural category (FSM, ISM, NIC, NNC, etc.)
@@ -322,13 +322,13 @@ filterLabel.associated_gene Associated gene
 filterText.associated_transcript *
 filterType.associated_transcript wildcard
 filterLabel.associated_transcript Associated transcript
-filter.ref_length 0:100000
+filter.ref_length 0:150000
 filterByRange.ref_length on
-filterLimits.ref_length 0:100000
+filterLimits.ref_length 0:150000
 filterLabel.ref_length Reference transcript length
-filter.ref_exons 0:200
+filter.ref_exons 0:400
 filterByRange.ref_exons on
-filterLimits.ref_exons 0:200
+filterLimits.ref_exons 0:400
 filterLabel.ref_exons Reference exon count
 filter.diff_to_TSS -100000:100000
 filterByRange.diff_to_TSS on
@@ -439,9 +439,9 @@ filter.ratio_TSS 0:10
 filterByRange.ratio_TSS on
 filterLimits.ratio_TSS 0:10
 filterLabel.ratio_TSS TSS ratio
-filter.blockCount 0:200
+filter.blockCount 0:400
 filterByRange.blockCount on
-filterLimits.blockCount 0:200
+filterLimits.blockCount 0:400
 filterLabel.blockCount Number of exons (from BED)
 
 track hg38_sqanti3_novel_not_in_catalog
@@ -449,18 +449,18 @@ bigDataUrl hg38_sqanti3_novel_not_in_catalog.bb
 shortLabel SQANTI3 novel_not_in_catalog
 longLabel SQANTI3 novel_not_in_catalog transcripts
 type bigBed 12 + 44
-visibility full
+visibility hide
 group transcripts
 itemRgb on
 priority 3
 html hg38_sqanti3_novel_not_in_catalog.html
-filter.length 0:100000
+filter.length 0:150000
 filterByRange.length on
-filterLimits.length 0:100000
+filterLimits.length 0:150000
 filterLabel.length Transcript length (bp)
-filter.exons 0:200
+filter.exons 0:400
 filterByRange.exons on
-filterLimits.exons 0:200
+filterLimits.exons 0:400
 filterLabel.exons Number of exons
 filterValues.structural_category novel_not_in_catalog
 filterLabel.structural_category Structural category (FSM, ISM, NIC, NNC, etc.)
@@ -470,13 +470,13 @@ filterLabel.associated_gene Associated gene
 filterText.associated_transcript *
 filterType.associated_transcript wildcard
 filterLabel.associated_transcript Associated transcript
-filter.ref_length 0:100000
+filter.ref_length 0:150000
 filterByRange.ref_length on
-filterLimits.ref_length 0:100000
+filterLimits.ref_length 0:150000
 filterLabel.ref_length Reference transcript length
-filter.ref_exons 0:200
+filter.ref_exons 0:400
 filterByRange.ref_exons on
-filterLimits.ref_exons 0:200
+filterLimits.ref_exons 0:400
 filterLabel.ref_exons Reference exon count
 filter.diff_to_TSS -100000:100000
 filterByRange.diff_to_TSS on
@@ -587,9 +587,9 @@ filter.ratio_TSS 0:10
 filterByRange.ratio_TSS on
 filterLimits.ratio_TSS 0:10
 filterLabel.ratio_TSS TSS ratio
-filter.blockCount 0:200
+filter.blockCount 0:400
 filterByRange.blockCount on
-filterLimits.blockCount 0:200
+filterLimits.blockCount 0:400
 filterLabel.blockCount Number of exons (from BED)
 
 track hg38_sqanti3_full-splice_match
@@ -597,18 +597,18 @@ bigDataUrl hg38_sqanti3_full-splice_match.bb
 shortLabel SQANTI3 full-splice_match
 longLabel SQANTI3 full-splice_match transcripts
 type bigBed 12 + 44
-visibility full
+visibility hide
 group transcripts
 itemRgb on
 priority 3
 html hg38_sqanti3_full-splice_match.html
-filter.length 0:100000
+filter.length 0:150000
 filterByRange.length on
-filterLimits.length 0:100000
+filterLimits.length 0:150000
 filterLabel.length Transcript length (bp)
-filter.exons 0:200
+filter.exons 0:400
 filterByRange.exons on
-filterLimits.exons 0:200
+filterLimits.exons 0:400
 filterLabel.exons Number of exons
 filterValues.structural_category full-splice_match
 filterLabel.structural_category Structural category (FSM, ISM, NIC, NNC, etc.)
@@ -618,13 +618,13 @@ filterLabel.associated_gene Associated gene
 filterText.associated_transcript *
 filterType.associated_transcript wildcard
 filterLabel.associated_transcript Associated transcript
-filter.ref_length 0:100000
+filter.ref_length 0:150000
 filterByRange.ref_length on
-filterLimits.ref_length 0:100000
+filterLimits.ref_length 0:150000
 filterLabel.ref_length Reference transcript length
-filter.ref_exons 0:200
+filter.ref_exons 0:400
 filterByRange.ref_exons on
-filterLimits.ref_exons 0:200
+filterLimits.ref_exons 0:400
 filterLabel.ref_exons Reference exon count
 filter.diff_to_TSS -100000:100000
 filterByRange.diff_to_TSS on
@@ -735,9 +735,9 @@ filter.ratio_TSS 0:10
 filterByRange.ratio_TSS on
 filterLimits.ratio_TSS 0:10
 filterLabel.ratio_TSS TSS ratio
-filter.blockCount 0:200
+filter.blockCount 0:400
 filterByRange.blockCount on
-filterLimits.blockCount 0:200
+filterLimits.blockCount 0:400
 filterLabel.blockCount Number of exons (from BED)
 
 track hg38_sqanti3_genic
@@ -745,18 +745,18 @@ bigDataUrl hg38_sqanti3_genic.bb
 shortLabel SQANTI3 genic
 longLabel SQANTI3 genic transcripts
 type bigBed 12 + 44
-visibility full
+visibility hide
 group transcripts
 itemRgb on
 priority 3
 html hg38_sqanti3_genic.html
-filter.length 0:100000
+filter.length 0:150000
 filterByRange.length on
-filterLimits.length 0:100000
+filterLimits.length 0:150000
 filterLabel.length Transcript length (bp)
-filter.exons 0:200
+filter.exons 0:400
 filterByRange.exons on
-filterLimits.exons 0:200
+filterLimits.exons 0:400
 filterLabel.exons Number of exons
 filterValues.structural_category genic
 filterLabel.structural_category Structural category (FSM, ISM, NIC, NNC, etc.)
@@ -766,13 +766,13 @@ filterLabel.associated_gene Associated gene
 filterText.associated_transcript *
 filterType.associated_transcript wildcard
 filterLabel.associated_transcript Associated transcript
-filter.ref_length 0:100000
+filter.ref_length 0:150000
 filterByRange.ref_length on
-filterLimits.ref_length 0:100000
+filterLimits.ref_length 0:150000
 filterLabel.ref_length Reference transcript length
-filter.ref_exons 0:200
+filter.ref_exons 0:400
 filterByRange.ref_exons on
-filterLimits.ref_exons 0:200
+filterLimits.ref_exons 0:400
 filterLabel.ref_exons Reference exon count
 filter.diff_to_TSS -100000:100000
 filterByRange.diff_to_TSS on
@@ -883,9 +883,9 @@ filter.ratio_TSS 0:10
 filterByRange.ratio_TSS on
 filterLimits.ratio_TSS 0:10
 filterLabel.ratio_TSS TSS ratio
-filter.blockCount 0:200
+filter.blockCount 0:400
 filterByRange.blockCount on
-filterLimits.blockCount 0:200
+filterLimits.blockCount 0:400
 filterLabel.blockCount Number of exons (from BED)
 
 track hg38_sqanti3_genic_intron
@@ -893,18 +893,18 @@ bigDataUrl hg38_sqanti3_genic_intron.bb
 shortLabel SQANTI3 genic_intron
 longLabel SQANTI3 genic_intron transcripts
 type bigBed 12 + 44
-visibility full
+visibility hide
 group transcripts
 itemRgb on
 priority 3
 html hg38_sqanti3_genic_intron.html
-filter.length 0:100000
+filter.length 0:150000
 filterByRange.length on
-filterLimits.length 0:100000
+filterLimits.length 0:150000
 filterLabel.length Transcript length (bp)
-filter.exons 0:200
+filter.exons 0:400
 filterByRange.exons on
-filterLimits.exons 0:200
+filterLimits.exons 0:400
 filterLabel.exons Number of exons
 filterValues.structural_category genic_intron
 filterLabel.structural_category Structural category (FSM, ISM, NIC, NNC, etc.)
@@ -914,13 +914,13 @@ filterLabel.associated_gene Associated gene
 filterText.associated_transcript *
 filterType.associated_transcript wildcard
 filterLabel.associated_transcript Associated transcript
-filter.ref_length 0:100000
+filter.ref_length 0:150000
 filterByRange.ref_length on
-filterLimits.ref_length 0:100000
+filterLimits.ref_length 0:150000
 filterLabel.ref_length Reference transcript length
-filter.ref_exons 0:200
+filter.ref_exons 0:400
 filterByRange.ref_exons on
-filterLimits.ref_exons 0:200
+filterLimits.ref_exons 0:400
 filterLabel.ref_exons Reference exon count
 filter.diff_to_TSS -100000:100000
 filterByRange.diff_to_TSS on
@@ -1031,9 +1031,9 @@ filter.ratio_TSS 0:10
 filterByRange.ratio_TSS on
 filterLimits.ratio_TSS 0:10
 filterLabel.ratio_TSS TSS ratio
-filter.blockCount 0:200
+filter.blockCount 0:400
 filterByRange.blockCount on
-filterLimits.blockCount 0:200
+filterLimits.blockCount 0:400
 filterLabel.blockCount Number of exons (from BED)
 
 track hg38_sqanti3_intergenic
@@ -1041,18 +1041,18 @@ bigDataUrl hg38_sqanti3_intergenic.bb
 shortLabel SQANTI3 intergenic
 longLabel SQANTI3 intergenic transcripts
 type bigBed 12 + 44
-visibility full
+visibility hide
 group transcripts
 itemRgb on
 priority 3
 html hg38_sqanti3_intergenic.html
-filter.length 0:100000
+filter.length 0:150000
 filterByRange.length on
-filterLimits.length 0:100000
+filterLimits.length 0:150000
 filterLabel.length Transcript length (bp)
-filter.exons 0:200
+filter.exons 0:400
 filterByRange.exons on
-filterLimits.exons 0:200
+filterLimits.exons 0:400
 filterLabel.exons Number of exons
 filterValues.structural_category intergenic
 filterLabel.structural_category Structural category (FSM, ISM, NIC, NNC, etc.)
@@ -1062,13 +1062,13 @@ filterLabel.associated_gene Associated gene
 filterText.associated_transcript *
 filterType.associated_transcript wildcard
 filterLabel.associated_transcript Associated transcript
-filter.ref_length 0:100000
+filter.ref_length 0:150000
 filterByRange.ref_length on
-filterLimits.ref_length 0:100000
+filterLimits.ref_length 0:150000
 filterLabel.ref_length Reference transcript length
-filter.ref_exons 0:200
+filter.ref_exons 0:400
 filterByRange.ref_exons on
-filterLimits.ref_exons 0:200
+filterLimits.ref_exons 0:400
 filterLabel.ref_exons Reference exon count
 filter.diff_to_TSS -100000:100000
 filterByRange.diff_to_TSS on
@@ -1179,9 +1179,9 @@ filter.ratio_TSS 0:10
 filterByRange.ratio_TSS on
 filterLimits.ratio_TSS 0:10
 filterLabel.ratio_TSS TSS ratio
-filter.blockCount 0:200
+filter.blockCount 0:400
 filterByRange.blockCount on
-filterLimits.blockCount 0:200
+filterLimits.blockCount 0:400
 filterLabel.blockCount Number of exons (from BED)
 
 track hg38_sqanti3_antisense
@@ -1189,18 +1189,18 @@ bigDataUrl hg38_sqanti3_antisense.bb
 shortLabel SQANTI3 antisense
 longLabel SQANTI3 antisense transcripts
 type bigBed 12 + 44
-visibility full
+visibility hide
 group transcripts
 itemRgb on
 priority 3
 html hg38_sqanti3_antisense.html
-filter.length 0:100000
+filter.length 0:150000
 filterByRange.length on
-filterLimits.length 0:100000
+filterLimits.length 0:150000
 filterLabel.length Transcript length (bp)
-filter.exons 0:200
+filter.exons 0:400
 filterByRange.exons on
-filterLimits.exons 0:200
+filterLimits.exons 0:400
 filterLabel.exons Number of exons
 filterValues.structural_category antisense
 filterLabel.structural_category Structural category (FSM, ISM, NIC, NNC, etc.)
@@ -1210,13 +1210,13 @@ filterLabel.associated_gene Associated gene
 filterText.associated_transcript *
 filterType.associated_transcript wildcard
 filterLabel.associated_transcript Associated transcript
-filter.ref_length 0:100000
+filter.ref_length 0:150000
 filterByRange.ref_length on
-filterLimits.ref_length 0:100000
+filterLimits.ref_length 0:150000
 filterLabel.ref_length Reference transcript length
-filter.ref_exons 0:200
+filter.ref_exons 0:400
 filterByRange.ref_exons on
-filterLimits.ref_exons 0:200
+filterLimits.ref_exons 0:400
 filterLabel.ref_exons Reference exon count
 filter.diff_to_TSS -100000:100000
 filterByRange.diff_to_TSS on
@@ -1327,9 +1327,9 @@ filter.ratio_TSS 0:10
 filterByRange.ratio_TSS on
 filterLimits.ratio_TSS 0:10
 filterLabel.ratio_TSS TSS ratio
-filter.blockCount 0:200
+filter.blockCount 0:400
 filterByRange.blockCount on
-filterLimits.blockCount 0:200
+filterLimits.blockCount 0:400
 filterLabel.blockCount Number of exons (from BED)
 
 track hg38_sqanti3_fusion
@@ -1337,18 +1337,18 @@ bigDataUrl hg38_sqanti3_fusion.bb
 shortLabel SQANTI3 fusion
 longLabel SQANTI3 fusion transcripts
 type bigBed 12 + 44
-visibility full
+visibility hide
 group transcripts
 itemRgb on
 priority 3
 html hg38_sqanti3_fusion.html
-filter.length 0:100000
+filter.length 0:150000
 filterByRange.length on
-filterLimits.length 0:100000
+filterLimits.length 0:150000
 filterLabel.length Transcript length (bp)
-filter.exons 0:200
+filter.exons 0:400
 filterByRange.exons on
-filterLimits.exons 0:200
+filterLimits.exons 0:400
 filterLabel.exons Number of exons
 filterValues.structural_category fusion
 filterLabel.structural_category Structural category (FSM, ISM, NIC, NNC, etc.)
@@ -1358,13 +1358,13 @@ filterLabel.associated_gene Associated gene
 filterText.associated_transcript *
 filterType.associated_transcript wildcard
 filterLabel.associated_transcript Associated transcript
-filter.ref_length 0:100000
+filter.ref_length 0:150000
 filterByRange.ref_length on
-filterLimits.ref_length 0:100000
+filterLimits.ref_length 0:150000
 filterLabel.ref_length Reference transcript length
-filter.ref_exons 0:200
+filter.ref_exons 0:400
 filterByRange.ref_exons on
-filterLimits.ref_exons 0:200
+filterLimits.ref_exons 0:400
 filterLabel.ref_exons Reference exon count
 filter.diff_to_TSS -100000:100000
 filterByRange.diff_to_TSS on
@@ -1475,7 +1475,7 @@ filter.ratio_TSS 0:10
 filterByRange.ratio_TSS on
 filterLimits.ratio_TSS 0:10
 filterLabel.ratio_TSS TSS ratio
-filter.blockCount 0:200
+filter.blockCount 0:400
 filterByRange.blockCount on
-filterLimits.blockCount 0:200
+filterLimits.blockCount 0:400
 filterLabel.blockCount Number of exons (from BED)
